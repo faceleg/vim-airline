@@ -1,10 +1,10 @@
 # vim-airline
 
-lean &amp; mean statusline for vim that's light as air
+Lean &amp; mean statusline for vim that's light as air
 
 # rationale
 
-there's already [powerline][b], why yet another statusline?
+There's already [powerline][b], why yet another statusline?
 
 *  it's 100% vimscript; no python needed.
 *  it's small.  i want the core plugin to be *less than 200 lines* as a rule (specifically adhering to the [open/closed principle][h]).
@@ -14,17 +14,17 @@ there's already [powerline][b], why yet another statusline?
 *  it's fully customizable; if you know a little `statusline` syntax you can tweak it to your needs.
 *  it is trivial to write colorschemes; for a minimal theme you need to edit 9 lines of colors. (please send pull requests if you create new themes!)
 
-what about [old powerline][a]?
+What about [old powerline][a]?
 
-*  the old version still works well, but since it's deprecated new features won't get added
+* the old version still works well, but since it's deprecated new features won't get added
 
-# why's it called airline?
+# Why's it called airline?
 
-i wrote the initial version on an airplane, and since it's light as air it turned out to be a good name.  thanks for flying vim!
+I wrote the initial version on an airplane, and since it's light as air it turned out to be a good name.  Thanks for flying vim!
 
-# installation
+# Installation
 
-this plugin follows the standard runtime path structure, and as such it can be installed with a variety of plugin managers:
+This plugin follows the standard runtime path structure, and as such it can be installed with a variety of plugin managers:
 
 *  [pathogen][k]
   *  `git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline`
@@ -35,11 +35,11 @@ this plugin follows the standard runtime path structure, and as such it can be i
 *  manual
   *  copy all of the files into your `~/.vim` directory
 
-# configuration
+# Configuration
 
 `:help airline`
 
-# faq/troubleshooting
+# FAQ/troubleshooting
 
 *  the powerline font symbols are not showing up
   *  enable them by adding `let g:airline_powerline_fonts=1` to your `~/.vimrc`
@@ -48,7 +48,7 @@ this plugin follows the standard runtime path structure, and as such it can be i
 *  there is a pause when leaving insert mode
   *  you need to set `ttimeoutlen` to a low number; 50 is recommended
 *  you don't see any colors
-  *  all of the themes use a 256 terminal color palette.  it's likely that the value of `t_Co` is misconfigured.  please see this [article][n] on how to configure your terminal.  pull requests for 8 and 16 color terminals are welcome.
+  *  all of the themes use a 256 terminal color palette.  it's likely that the value of `t_Co` is misconfigured. Please see this [article][n] on how to configure your terminal.  pull requests for 8 and 16 color terminals are welcome.
 *  you get the error `Unknown function: fugitive#head`
   *  you are probably using version 1.2, which is very old...download v2 from the [project page][d].
 *  airline doesn't appear until i create a new split
@@ -56,11 +56,11 @@ this plugin follows the standard runtime path structure, and as such it can be i
 *  bufferline is printing to the statusline as well as the command bar
   *  you can disable automatic echoing by adding `let g:bufferline_echo = 0` to your vimrc
 
-# bugs
+# Bugs
 
-if you encounter a bug, please reproduce it with this [minivimrc][g] repository i created and file an issue.  please provide your operating system and vim version/patch level (can be found with `:version`).  a reproducible gist would be hugely helpful.
+If you encounter a bug, please reproduce it with this [minivimrc][g] repository i created and file an issue.  Please provide your operating system and vim version/patch level (can be found with `:version`). A reproducible gist would be hugely helpful.
 
-# screenshots
+# Screenshots
 
 ### dark theme with a regular font
 
@@ -82,11 +82,11 @@ if you encounter a bug, please reproduce it with this [minivimrc][g] repository 
 
 ![img](https://github.com/bling/vim-airline/wiki/screenshots/badwolf.png)
 
-# contributions
+# Contributions
 
-contributions and pull requests are welcome.  please follow the existing coding style as much as possible.
+Contributions and pull requests are welcome.  Please follow the existing coding style as much as possible.
 
-# license
+# License
 
 `:h license`
 
